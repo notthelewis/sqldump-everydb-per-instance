@@ -4,12 +4,12 @@ import subprocess
 
 
 """
-	Get's the current working directory, then gets the sqldump.sh file.
-	Syntax is - 
-	mysqldump db_name table_name > table_name.sql 
-  To use this, change any of the databse configuration settings. 
-  Also uses the mysql-connector package for python3.8. pip install mysql-connector-python  
-
+Get's the current working directory, then gets the sqldump.sh file.
+Syntax is - 
+mysqldump db_name table_name > table_name.sql 
+To use this, change any of the databse configuration settings. 
+Also uses the mysql-connector package for python3.8. pip install mysql-connector-python 
+If you wanted to use on any OS other than Linux, change the DB connector and your OS's equievelent for the sqldump.sh script 
 """
 dir = os.getcwd()
 dumpcmd = dir + "/sqldump.sh"
